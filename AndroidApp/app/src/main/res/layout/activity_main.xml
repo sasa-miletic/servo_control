@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/pozadina"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="pos 1"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:background="#1B9A8989"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="pos 2"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:background="#1B9A8989"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="pos 3"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:background="#1B9A8989"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:text="pos 4"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:background="#1B9A8989"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="10dp"
+        android:max="25"
+        android:min="1"
+        android:progress="0"
+        android:progressDrawable="@drawable/bar"
+        android:thumb="@drawable/thumb"
+        android:indeterminate="false"/>
+
+    <Button
+        android:id="@+id/speachBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="up/down"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="150dp"
+        android:drawableStart="@drawable/ic_speach"
+        android:background="#08DDD2D2"/>
+
+</LinearLayout>
